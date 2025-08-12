@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties for Sale in Dubai - McCone Properties</title>
+    <meta name="description" content="Browse luxury properties for sale in Dubai. Advanced search filters, detailed listings, and expert guidance for your property purchase.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="src/styles/properties.css">
+</head>
+<body>
+    <!-- Header (same as homepage) -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="https://images.pexels.com/photos/1370704/pexels-photo-1370704.jpeg?auto=compress&cs=tinysrgb&w=40&h=40&fit=crop" alt="McCone Properties">
+                    <span>McCone Properties</span>
+                </div>
+                
+                <nav class="nav">
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link active">Buy <span class="dropdown-arrow">↓</span></a>
+                        <div class="dropdown-menu">
+                            <a href="properties-sale.html" class="dropdown-link">Properties for Sale</a>
+                            <a href="buying-guide.html" class="dropdown-link">Buying in Dubai</a>
+                            <a href="buyers-guide.html" class="dropdown-link">Buyers Guide</a>
+                            <a href="rental-yield-calculator.html" class="dropdown-link">Rental Yield Calculator</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link">Rent <span class="dropdown-arrow">↓</span></a>
+                        <div class="dropdown-menu">
+                            <a href="properties-rent.html" class="dropdown-link">Properties for Rent</a>
+                            <a href="renting-guide.html" class="dropdown-link">Renting in Dubai</a>
+                            <a href="tenants-guide.html" class="dropdown-link">Tenants Guide</a>
+                            <a href="tenancy-renewal.html" class="dropdown-link">Tenancy Renewal</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link">Sell <span class="dropdown-arrow">↓</span></a>
+                        <div class="dropdown-menu">
+                            <a href="why-mccone.html" class="dropdown-link">Why McCone Properties</a>
+                            <a href="selling-guide.html" class="dropdown-link">Selling in Dubai</a>
+                            <a href="sellers-guide.html" class="dropdown-link">Sellers Guide</a>
+                            <a href="book-valuation.html" class="dropdown-link">Book a Valuation</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link">Services <span class="dropdown-arrow">↓</span></a>
+                        <div class="dropdown-menu">
+                            <a href="mccone-living.html" class="dropdown-link">McCone Living</a>
+                            <a href="mortgage-service.html" class="dropdown-link">Mortgage Service</a>
+                            <a href="conveyancing.html" class="dropdown-link">Conveyancing</a>
+                        </div>
+                    </div>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="careers.html" class="nav-link">Careers</a>
+                </nav>
+                
+                <div class="header-actions">
+                    <a href="user-account.html" class="btn-secondary">My Account</a>
+                    <a href="list-property.html" class="btn-primary">List Your Property</a>
+                </div>
+                
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Properties for Sale in Dubai</h1>
+            <p>Discover your perfect property from our curated selection of premium Dubai real estate</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="properties-main">
+        <div class="container">
+            <div class="properties-layout">
+                <!-- Sidebar Filters -->
+                <aside class="filters-sidebar">
+                    <div class="filters-header">
+                        <h3>Filter Properties</h3>
+                        <button class="btn-clear-filters">Clear All</button>
+                    </div>
+                    
+                    <div class="filter-section">
+                        <h4>Completion Status</h4>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="completion" value="any" checked>
+                                <span class="radio-custom"></span>
+                                Any
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="completion" value="off-plan">
+                                <span class="radio-custom"></span>
+                                Off Plan
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="completion" value="completed">
+                                <span class="radio-custom"></span>
+                                Completed
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-section">
+                        <h4>Property Type</h4>
+                        <div class="checkbox-group">
+                            <label class="checkbox-option">
+                                <input type="checkbox" value="apartment">
+                                <span class="checkbox-custom"></span>
+                                <span class="option-icon">🏢</span>
+                                Apartment
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" value="villa">
+                                <span class="checkbox-custom"></span>
+                                <span class="option-icon">🏘️</span>
+                                Villa
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" value="townhouse">
+                                <span class="checkbox-custom"></span>
+                                <span class="option-icon">🏠</span>
+                                Townhouse
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" value="penthouse">
+                                <span class="checkbox-custom"></span>
+                                <span class="option-icon">🏙️</span>
+                                Penthouse
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" value="studio">
+                                <span class="checkbox-custom"></span>
+                                <span class="option-icon">🏠</span>
+                                Studio
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-section">
+                        <h4>Price Range (AED)</h4>
+                        <div class="price-inputs">
+                            <input type="number" placeholder="Min price" class="price-input" id="min-price">
+                            <span class="price-separator">to</span>
+                            <input type="number" placeholder="Max price" class="price-input" id="max-price">
+                        </div>
+                        <div class="price-range-slider">
+                            <input type="range" min="200000" max="50000000" value="200000" class="range-input" id="price-range-min">
+                            <input type="range" min="200000" max="50000000" value="50000000" class="range-input" id="price-range-max">
+                        </div>
+                    </div>
+                    
+                    <div class="filter-section">
+                        <h4>Bedrooms</h4>
+                        <div class="stepper-group">
+                            <div class="stepper">
+                                <button type="button" class="stepper-btn">-</button>
+                                <span class="stepper-value">Any</span>
+                                <button type="button" class="stepper-btn">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-section">
+                        <h4>Area (sqft)</h4>
+                        <div class="area-inputs">
+                            <input type="number" placeholder="Min area" class="area-input">
+                            <input type="number" placeholder="Max area" class="area-input">
+                        </div>
+                    </div>
+                    
+                    <div class="filter-section">
+                        <h4>Amenities</h4>
+                        <div class="amenities-search">
+                            <input type="text" placeholder="Search amenities..." class="amenities-search-input">
+                        </div>
+                        <div class="amenities-grid">
+                            <label class="amenity-option">
+                                <input type="checkbox" value="balcony">
+                                <span class="amenity-custom"></span>
+                                <span class="amenity-icon">🏢</span>
+                                Balcony
+                            </label>
+                            <label class="amenity-option">
+                                <input type="checkbox" value="kitchen">
+                                <span class="amenity-custom"></span>
+                                <span class="amenity-icon">🍳</span>
+                                Built-in Kitchen
+                            </label>
+                            <label class="amenity-option">
+                                <input type="checkbox" value="wardrobes">
+                                <span class="amenity-custom"></span>
+                                <span class="amenity-icon">👔</span>
+                                Built-in Wardrobes
+                            </label>
+                            <label class="amenity-option">
+                                <input type="checkbox" value="ac">
+                                <span class="amenity-custom"></span>
+                                <span class="amenity-icon">❄️</span>
+                                Central A/C
+                            </label>
+                            <label class="amenity-option">
+                                <input type="checkbox" value="concierge">
+                                <span class="amenity-custom"></span>
+                                <span class="amenity-icon">🛎️</span>
+                                Concierge
+                            </label>
+                            <label class="amenity-option">
+                                <input type="checkbox" value="parking">
+                                <span class="amenity-custom"></span>
+                                <span class="amenity-icon">🚗</span>
+                                Covered Parking
+                            </label>
+                            <label class="amenity-option">
+                                <input type="checkbox" value="gym">
+                                <span class="amenity-custom"></span>
+                                <span class="amenity-icon">💪</span>
+                                Shared Gym
+                            </label>
+                            <label class="amenity-option">
+                                <input type="checkbox" value="pool">
+                                <span class="amenity-custom"></span>
+                                <span class="amenity-icon">🏊</span>
+                                Shared Pool
+                            </label>
+                        </div>
+                        <button class="view-all-amenities">View All 21 Amenities</button>
+                    </div>
+                </aside>
+
+                <!-- Properties Grid -->
+                <section class="properties-content">
+                    <div class="results-header">
+                        <div class="results-info">
+                            <h2 id="results-count">1,247 Properties Found</h2>
+                            <p>Premium properties in Dubai's most desirable locations</p>
+                        </div>
+                        <div class="view-controls">
+                            <button class="view-btn active" data-view="grid">Grid</button>
+                            <button class="view-btn" data-view="list">List</button>
+                            <button class="view-btn" data-view="map">Map</button>
+                        </div>
+                        <div class="sort-controls">
+                            <select class="sort-select">
+                                <option value="newest">Newest First</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                                <option value="area">Area: Largest First</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="properties-grid" id="properties-grid">
+                        <!-- Property cards will be generated by JavaScript -->
+                    </div>
+                    
+                    <!-- Valuation CTA (appears after every 6 properties) -->
+                    <div class="valuation-cta">
+                        <div class="valuation-content">
+                            <h3>Get in touch and we'll help assess your property's value</h3>
+                            <p>Free professional valuation for your Dubai property</p>
+                            <a href="book-valuation.html" class="btn-primary">Get Free Valuation</a>
+                        </div>
+                    </div>
+                    
+                    <div class="pagination">
+                        <button class="pagination-btn" disabled>Previous</button>
+                        <div class="pagination-numbers">
+                            <button class="pagination-number active">1</button>
+                            <button class="pagination-number">2</button>
+                            <button class="pagination-number">3</button>
+                            <span class="pagination-ellipsis">...</span>
+                            <button class="pagination-number">47</button>
+                        </div>
+                        <button class="pagination-btn">Next</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (same as homepage) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="https://images.pexels.com/photos/1370704/pexels-photo-1370704.jpeg?auto=compress&cs=tinysrgb&w=40&h=40&fit=crop" alt="McCone Properties">
+                        <span>McCone Properties</span>
+                    </div>
+                    <p class="footer-description">Your trusted real estate partner in Dubai, providing professional services for buying, selling, and renting premium properties.</p>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <a href="tel:+97143806683">+971 4 380 6683</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <a href="mailto:info@mcconeproperties.com">info@mcconeproperties.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <span>Office P305, The Onyx Tower 2, The Greens, Dubai</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="properties-sale.html">Buy Properties</a></li>
+                        <li><a href="properties-rent.html">Rent Properties</a></li>
+                        <li><a href="book-valuation.html">Property Valuation</a></li>
+                        <li><a href="mccone-living.html">McCone Living</a></li>
+                        <li><a href="mortgage-service.html">Mortgage Service</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Locations</h4>
+                    <ul class="footer-links">
+                        <li><a href="downtown-dubai.html">Downtown Dubai</a></li>
+                        <li><a href="dubai-marina.html">Dubai Marina</a></li>
+                        <li><a href="palm-jumeirah.html">Palm Jumeirah</a></li>
+                        <li><a href="business-bay.html">Business Bay</a></li>
+                        <li><a href="dubai-hills.html">Dubai Hills</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="meet-the-team.html">Meet the Team</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2025 McCone Properties. All rights reserved.</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/js/main.js"></script>
+    <script src="src/js/properties.js"></script>
+</body>
+</html>

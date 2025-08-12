@@ -1,0 +1,537 @@
+/* Team Page Specific Styles */
+.team-hero {
+    background: linear-gradient(135deg, var(--primary-600), var(--primary-700));
+    color: white;
+    padding: var(--space-16) 0 var(--space-12);
+    text-align: center;
+}
+
+.team-hero h1 {
+    color: white;
+    margin-bottom: var(--space-4);
+    font-size: var(--font-size-4xl);
+}
+
+.team-hero p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: var(--font-size-lg);
+    margin: 0;
+}
+
+/* Team Members */
+.team-members {
+    padding: var(--space-16) 0;
+    background: var(--gray-50);
+}
+
+.team-member-detail {
+    background: white;
+    border-radius: var(--radius-2xl);
+    margin-bottom: var(--space-12);
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--gray-200);
+    overflow: hidden;
+}
+
+.team-member-detail.featured-member {
+    border: 2px solid var(--primary-200);
+    background: linear-gradient(135deg, var(--primary-50), white);
+}
+
+.member-layout {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: var(--space-8);
+    padding: var(--space-8);
+}
+
+.member-image {
+    position: relative;
+}
+
+.member-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+}
+
+.member-info h2 {
+    color: var(--gray-900);
+    margin-bottom: var(--space-2);
+    font-size: var(--font-size-3xl);
+}
+
+.member-title {
+    color: var(--primary-600);
+    font-weight: 600;
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--space-4);
+}
+
+.member-experience {
+    display: flex;
+    gap: var(--space-3);
+    margin-bottom: var(--space-6);
+    flex-wrap: wrap;
+}
+
+.experience-badge,
+.specialization-badge,
+.language-badge {
+    padding: var(--space-1) var(--space-3);
+    border-radius: var(--radius-full);
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+}
+
+.experience-badge {
+    background: var(--success-100);
+    color: var(--success-700);
+}
+
+.specialization-badge {
+    background: var(--primary-100);
+    color: var(--primary-700);
+}
+
+.specialization-badge.luxury {
+    background: var(--accent-100);
+    color: var(--accent-700);
+}
+
+.specialization-badge.commercial {
+    background: var(--secondary-100);
+    color: var(--secondary-700);
+}
+
+.language-badge {
+    background: var(--gray-100);
+    color: var(--gray-700);
+}
+
+.member-bio {
+    color: var(--gray-600);
+    line-height: 1.7;
+    margin-bottom: var(--space-8);
+    font-size: var(--font-size-base);
+}
+
+/* Member Sections */
+.member-achievements,
+.member-portfolio,
+.luxury-portfolio,
+.developer-relationships,
+.commercial-expertise,
+.office-management {
+    margin-bottom: var(--space-8);
+    padding: var(--space-6);
+    background: var(--gray-50);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--gray-200);
+}
+
+.member-achievements h4,
+.member-portfolio h4,
+.luxury-portfolio h4,
+.developer-relationships h4,
+.commercial-expertise h4,
+.office-management h4 {
+    color: var(--gray-900);
+    margin-bottom: var(--space-4);
+    font-size: var(--font-size-lg);
+}
+
+.member-achievements ul,
+.office-management ul {
+    list-style: none;
+    padding: 0;
+}
+
+.member-achievements li,
+.office-management li {
+    padding: var(--space-2) 0;
+    padding-left: var(--space-6);
+    position: relative;
+    color: var(--gray-600);
+}
+
+.member-achievements li::before,
+.office-management li::before {
+    content: '🏆';
+    position: absolute;
+    left: 0;
+}
+
+.office-management li::before {
+    content: '✓';
+    color: var(--success-500);
+    font-weight: 600;
+}
+
+/* Portfolio Grids */
+.portfolio-grid,
+.expertise-areas,
+.partnerships,
+.commercial-types {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-4);
+    margin-top: var(--space-4);
+}
+
+.portfolio-item,
+.expertise-item,
+.partnership-item,
+.commercial-type {
+    padding: var(--space-4);
+    background: white;
+    border-radius: var(--radius-base);
+    border: 1px solid var(--gray-200);
+}
+
+.expertise-item,
+.commercial-type {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.expertise-icon,
+.type-icon {
+    font-size: var(--font-size-xl);
+}
+
+.portfolio-item h5,
+.expertise-item h5,
+.partnership-item h5,
+.commercial-type h5 {
+    color: var(--gray-900);
+    margin-bottom: var(--space-2);
+    font-size: var(--font-size-base);
+}
+
+.portfolio-item p,
+.expertise-item p,
+.partnership-item p,
+.commercial-type p {
+    color: var(--gray-600);
+    margin: 0;
+    font-size: var(--font-size-sm);
+}
+
+/* Testimonials */
+.member-testimonials,
+.corporate-testimonials {
+    margin-bottom: var(--space-8);
+}
+
+.member-testimonials blockquote,
+.corporate-testimonials blockquote {
+    background: var(--primary-50);
+    border-left: 4px solid var(--primary-500);
+    padding: var(--space-4) var(--space-6);
+    border-radius: var(--radius-base);
+    font-style: italic;
+    color: var(--gray-700);
+    margin: 0;
+}
+
+.member-testimonials cite,
+.corporate-testimonials cite {
+    display: block;
+    margin-top: var(--space-3);
+    font-size: var(--font-size-sm);
+    color: var(--gray-500);
+    font-style: normal;
+    font-weight: 500;
+}
+
+/* Contact Methods */
+.member-contact {
+    display: flex;
+    gap: var(--space-3);
+    margin-bottom: var(--space-8);
+    flex-wrap: wrap;
+}
+
+.contact-method {
+    flex: 1;
+    min-width: 140px;
+    padding: var(--space-3) var(--space-4);
+    border-radius: var(--radius-base);
+    text-decoration: none;
+    font-weight: 500;
+    text-align: center;
+    transition: all var(--transition-base);
+    border: 1px solid transparent;
+}
+
+.contact-method.phone {
+    background: var(--primary-500);
+    color: white;
+}
+
+.contact-method.phone:hover {
+    background: var(--primary-600);
+    transform: translateY(-1px);
+}
+
+.contact-method.email {
+    background: var(--gray-100);
+    color: var(--gray-700);
+    border-color: var(--gray-300);
+}
+
+.contact-method.email:hover {
+    background: var(--gray-200);
+    transform: translateY(-1px);
+}
+
+.contact-method.whatsapp {
+    background: #25d366;
+    color: white;
+}
+
+.contact-method.whatsapp:hover {
+    background: #128c7e;
+    transform: translateY(-1px);
+}
+
+/* Member CTA */
+.member-cta {
+    background: var(--primary-50);
+    padding: var(--space-6);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    border: 1px solid var(--primary-200);
+}
+
+.member-cta.luxury-cta {
+    background: linear-gradient(135deg, var(--accent-50), var(--warning-50));
+    border-color: var(--accent-200);
+}
+
+.member-cta.commercial-cta {
+    background: linear-gradient(135deg, var(--secondary-50), var(--primary-50));
+    border-color: var(--secondary-200);
+}
+
+.member-cta.office-cta {
+    background: linear-gradient(135deg, var(--success-50), var(--primary-50));
+    border-color: var(--success-200);
+}
+
+.member-cta h4 {
+    color: var(--gray-900);
+    margin-bottom: var(--space-3);
+}
+
+.member-cta p {
+    color: var(--gray-600);
+    margin-bottom: var(--space-6);
+}
+
+.whatsapp-primary {
+    background: #25d366 !important;
+    color: white !important;
+}
+
+.whatsapp-primary:hover {
+    background: #128c7e !important;
+}
+
+/* Direct Contact Highlight */
+.direct-contact-highlight {
+    background: linear-gradient(135deg, var(--primary-50), var(--secondary-50));
+    padding: var(--space-6);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--primary-200);
+    margin-bottom: var(--space-8);
+}
+
+.direct-contact-highlight h4 {
+    color: var(--gray-900);
+    margin-bottom: var(--space-4);
+}
+
+.direct-contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--space-4);
+}
+
+.direct-contact-item {
+    text-align: center;
+}
+
+.contact-label {
+    display: block;
+    font-size: var(--font-size-xs);
+    color: var(--gray-500);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: var(--space-1);
+}
+
+.contact-value {
+    display: block;
+    font-weight: 600;
+    color: var(--gray-900);
+    text-decoration: none;
+}
+
+.contact-value.whatsapp-link {
+    color: #25d366;
+}
+
+.contact-value.whatsapp-link:hover {
+    color: #128c7e;
+}
+
+/* Market Predictions */
+.market-predictions {
+    background: var(--gray-50);
+    padding: var(--space-6);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--gray-200);
+    margin-bottom: var(--space-8);
+}
+
+.market-predictions h4 {
+    color: var(--gray-900);
+    margin-bottom: var(--space-3);
+}
+
+.market-predictions p {
+    color: var(--gray-600);
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Team CTA Section */
+.team-cta-section {
+    padding: var(--space-16) 0;
+    background: linear-gradient(135deg, var(--primary-500), var(--primary-700));
+    color: white;
+    text-align: center;
+}
+
+.team-cta-content h2 {
+    color: white;
+    margin-bottom: var(--space-4);
+}
+
+.team-cta-content p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--space-8);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.team-cta-actions {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-6);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .member-layout {
+        grid-template-columns: 250px 1fr;
+        gap: var(--space-6);
+    }
+    
+    .member-image img {
+        height: 250px;
+    }
+    
+    .portfolio-grid,
+    .expertise-areas,
+    .partnerships,
+    .commercial-types {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .member-layout {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+        text-align: center;
+    }
+    
+    .member-image {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    
+    .member-contact {
+        justify-content: center;
+    }
+    
+    .direct-contact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .team-cta-actions {
+        flex-direction: column;
+        gap: var(--space-4);
+        align-items: center;
+    }
+    
+    .team-cta-actions .btn-primary,
+    .team-cta-actions .btn-secondary {
+        width: 100%;
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+    .team-hero h1 {
+        font-size: var(--font-size-3xl);
+    }
+    
+    .member-info h2 {
+        font-size: var(--font-size-2xl);
+    }
+    
+    .member-contact {
+        flex-direction: column;
+        gap: var(--space-3);
+    }
+    
+    .direct-contact-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .member-experience {
+        justify-content: center;
+    }
+}
+
+/* Scroll to member functionality */
+.scroll-to-member {
+    scroll-margin-top: 100px;
+}
+
+/* Enhanced hover effects */
+.team-member-detail:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-xl);
+}
+
+.contact-method:hover {
+    box-shadow: var(--shadow-md);
+}
+
+/* Animation delays for staggered effect */
+.team-member-detail:nth-child(1) { animation-delay: 0.1s; }
+.team-member-detail:nth-child(2) { animation-delay: 0.2s; }
+.team-member-detail:nth-child(3) { animation-delay: 0.3s; }
+.team-member-detail:nth-child(4) { animation-delay: 0.4s; }
+.team-member-detail:nth-child(5) { animation-delay: 0.5s; }

@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500&family=Cormorant+Garamond:wght@300;400;500&family=Lato:wght@300;400;500&display=swap');
+
+:root {
+  /* New font tokens */
+  --font-heading: 'Cormorant Garamond', serif;
+  --font-body: 'Lato', system-ui, -apple-system, Segoe UI, Roboto, 'Noto Sans', sans-serif;
+  --font-arabic: 'Cairo', 'Noto Sans Arabic', sans-serif;
+  /* Back-compat aliases */
+  --font-family-heading: var(--font-heading);
+  --font-family-body: var(--font-body);
+  /* Typography Scale (updated for luxury hierarchy) */
+  --fs-xxs: 12px;
+  --fs-xs: 14px;
+  --fs-sm: 16px;
+  --fs-md: 18px; /* body */
+  --fs-lg: 20px;
+  --fs-xl: 24px;
+  --fs-2xl: 32px; /* h3 */
+  --fs-3xl: 40px; /* h2 */
+  --fs-4xl: 56px; /* h1 desktop */
+
+  --lh-tight: 1.25;
+  --lh-normal: 1.7;
+  --lh-loose: 1.75;
+
+  /* Spacing Rhythm */
+  --space-xxs: 8px;
+  --space-xs: 12px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 32px;
+  --space-xl: 48px;
+  --space-2xl: 64px;
+  --space-3xl: 80px;
+  --space-4xl: 96px;
+
+  /* Layout */
+  --container-max: 1240px;
+  /* Softer, minimal shadows */
+  --elevation-1: 0 1px 4px rgba(0,0,0,.05);
+  --elevation-2: 0 4px 12px rgba(0,0,0,.08);
+  --elevation-3: 0 8px 20px rgba(0,0,0,.10);
+
+  /* Colors (McCone-like neutrals + Jiya brand accent) */
+  --color-bg: #ffffff;
+  --color-surface: #ffffff;
+  --color-text: #0f172a; /* slate-900 */
+  --color-text-muted: #475569; /* slate-600 */
+  --color-border: #e2e8f0; /* slate-200 */
+  --color-overlay: rgba(15, 23, 42, 0.55);
+  --color-primary: #C8102E; /* Jiya brand */
+  --color-primary-hover: #a60d26;
+  --color-focus: #1e40af;
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --fs-4xl: 44px; /* H1 */
+    --space-3xl: 72px;
+    --space-4xl: 84px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --fs-4xl: 36px; /* H1 32-40 */
+    --fs-3xl: 30px; /* H2 28-32 */
+    --fs-2xl: 26px; /* H3 24-28 */
+    --space-3xl: 56px;
+    --space-4xl: 64px;
+  }
+}
+
+/* Global Typography Application */
+body {
+  font-family: var(--font-body), var(--font-arabic);
+  font-weight: 300;
+  line-height: var(--lh-normal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading), var(--font-arabic);
+  font-weight: 300;
+  line-height: var(--lh-tight);
+  letter-spacing: 0.5px;
+}
+
+nav, button, input, select, textarea {
+  font-family: var(--font-body), var(--font-arabic);
+  font-weight: 400;
+}

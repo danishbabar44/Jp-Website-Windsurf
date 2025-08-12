@@ -1,0 +1,16 @@
+[build]
+  publish = "."
+  command = ""
+
+# Basic headers for caching; adjust as needed
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Optional: enable clean URLs (remove .html in links)
+[build.processing]
+  skip_processing = false
+
+[build.processing.html]
+  pretty_urls = true
